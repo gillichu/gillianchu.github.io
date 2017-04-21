@@ -33,24 +33,45 @@ $(".page-wrapper").click(function () {
 });
   // QUESTION 8
 
-  //Implement the "slide to left" when the user clicks on #carousel-next here
-$("#carousel-next").click(function() {
-  var currMargin = parseInt($('#carousel').css("margin-left").replace("px", ""));
+  //Implement the "slide to left" when the user clicks on #carousel-next of the QUOTE CAROUSEL
+$("#carousel-next1").click(function() {
+  var currMargin = parseInt($('#carousel1').css("margin-left").replace("px", ""));
   if (currMargin == -3840) {
     return false;
   } else {
-    $("#carousel").css("margin-left", currMargin - 960);
+    $("#carousel1").css("margin-left", currMargin - 960);
   }
 });
   //Implement the "slide to right" when the user clicks on #carousel-prev here
-$("#carousel-prev").click(function() {
-  var currMargin = parseInt($('#carousel').css("margin-left").replace("px", ""));
+$("#carousel-prev1").click(function() {
+  var currMargin = parseInt($('#carousel1').css("margin-left").replace("px", ""));
   if (currMargin == 0) {
     return false;
   } else {
-    $("#carousel").css("margin-left", currMargin + 960);
+    $("#carousel1").css("margin-left", currMargin + 960);
   }
 });
+
+
+  //Implement the "slide to left" when the user clicks on #carousel-next of the LIVED CAROUSEL
+$("#carousel-next2").click(function() {
+  var currMargin = parseInt($('#carousel2').css("margin-left").replace("px", ""));
+  if (currMargin == -3840) {
+    return false;
+  } else {
+    $("#carousel2").css("margin-left", currMargin - 960);
+  }
+});
+  //Implement the "slide to right" when the user clicks on #carousel-prev here
+$("#carousel-prev2").click(function() {
+  var currMargin = parseInt($('#carousel2').css("margin-left").replace("px", ""));
+  if (currMargin == 0) {
+    return false;
+  } else {
+    $("#carousel2").css("margin-left", currMargin + 960);
+  }
+});
+
 
   //THIS IS NOT A REQUIRED QUESTION 
   // EXTRA FOR EXPERTS 
