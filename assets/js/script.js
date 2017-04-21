@@ -72,6 +72,24 @@ $("#carousel-prev2").click(function() {
   }
 });
 
+  //Implement the "slide to left" when the user clicks on #carousel-next of the LIVED CAROUSEL
+$("#carousel-next3").click(function() {
+  var currMargin = parseInt($('#carousel3').css("margin-left").replace("px", ""));
+  if (currMargin == -3840) {
+    return false;
+  } else {
+    $("#carousel3").css("margin-left", currMargin - 960);
+  }
+});
+  //Implement the "slide to right" when the user clicks on #carousel-prev here
+$("#carousel-prev3").click(function() {
+  var currMargin = parseInt($('#carousel3').css("margin-left").replace("px", ""));
+  if (currMargin == 0) {
+    return false;
+  } else {
+    $("#carousel3").css("margin-left", currMargin + 960);
+  }
+});
 
   //THIS IS NOT A REQUIRED QUESTION 
   // EXTRA FOR EXPERTS 

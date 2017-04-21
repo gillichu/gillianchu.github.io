@@ -44,6 +44,20 @@
 	-webkit-transition: all 0.3s;
 }
 
+#carousel3 {
+	width: 4800px;
+	height: 100%;
+	margin-left: 0px;
+	-webkit-transition: all 0.3s;
+}
+
+
+.carousel-item-quote {
+	width: 960px;
+	position: relative;
+	height: 100%;
+	float: left;
+}
 
 .carousel-item {
 	width: 960px;
@@ -67,12 +81,8 @@
 	background-color: #8bb2af;
 }
 
-#visited-section {
-	background-color: #fff;
-}
-
-#travel-text {
-	color: black;
+#travel-section {
+	background-color: #D8BFD8;
 }
 
 /* DOCUMENT SET UP */
@@ -225,6 +235,36 @@ a {
     border: 1px solid #fff;
     -webkit-transition: all 0.3s;
 }
+
+#carousel-prev3 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    left: 60px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
+}
+
+/* Styling for the carousel next button */
+#carousel-next3 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    right: 60px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
+}
+
 
 /* Styling for the quotes and text in each section */
 .quote, .text {
