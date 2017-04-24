@@ -30,6 +30,15 @@
 	position: relative;
 }
 
+.carousel-container-home {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
 #carousel1 {
 	width: 4800px;
 	height: 100%;
@@ -47,6 +56,13 @@
 #carousel3 {
 	width: 4800px;
 	height: 100%;
+	margin-left: 0px;
+	-webkit-transition: all 0.3s;
+}
+
+#carousel-home {
+	width: 4800px;
+	height: 80%;
 	margin-left: 0px;
 	-webkit-transition: all 0.3s;
 }
@@ -73,6 +89,12 @@
 	position: relative;
 }
 
+.section2 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
 #quote-section {
 	background-color: #2bde73
 }
@@ -83,6 +105,17 @@
 
 #travel-section {
 	background-color: #D8BFD8;
+}
+
+#home-page-section {
+	background-color: #D8BFD8;
+}
+
+#about-me {
+	width: 100%;
+	height: 250px;
+	margin-top: auto;
+	position: fixed;
 }
 
 /* DOCUMENT SET UP */
@@ -170,6 +203,14 @@ a {
 }
 
 .page-wrapper {
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+.page-wrapper2 {
 	height: 100%;
 	width: 100%;
 	-webkit-transition: all .3s;
@@ -265,10 +306,38 @@ a {
     -webkit-transition: all 0.3s;
 }
 
+#carousel-next-home {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    right: 60px;
+    top: 40%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
+}
+
+#carousel-prev-home {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    left: 60px;
+    top: 40%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
+}
 
 /* Styling for the quotes and text in each section */
 .quote, .text {
 	position: absolute;
+	text-align: center;
 	font-size: 36px;
 	color: white;
 	font-weight: 700;
@@ -306,3 +375,214 @@ a {
 	-moz-transform: translateX(0px);
 	-o-transform: translateX(0px);
 }
+
+
+/*insert here*/
+
+#strip2 {
+	width: 10%;
+	background-color: #FF6961;
+	height: 100%;
+	float: left;
+}
+
+#strip2:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+
+#strip3 {
+	width: 10%;
+	background-color: #FFB6C1;
+	height: 100%;
+	float:left;
+}
+
+#strip3:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+
+#strip4 {
+	width: 10%;
+	background-color: #F49AC2;
+	height: 100%;
+	float:left;
+}
+
+#strip4:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+
+#strip5 {
+	width: 10%;
+	background-color: #B19CD9;
+	height: 100%;
+	float:left;
+}
+
+#strip5:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+
+#strip6 {
+	width: 10%;
+	background-color: #FFB347;
+	height: 100%;
+	float:right;
+}
+
+#strip6:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+
+#strip7 {
+	width: 10%;
+	background-color: #FFB6C1;
+	height: 100%;
+	float:right;
+}
+
+#strip7:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+
+#strip8 {
+	width: 10%;
+	background-color: #77DD77;
+	height: 100%;
+	float:right;
+}
+
+#strip8:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+
+#strip9 {
+	width: 10%;
+	background-color: #CB99C9;
+	height: 100%;
+	float:right;
+}
+
+#strip9:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+
+#stripDivider {
+	width: 10%;
+	background-color: #779ECB;
+	height: 100%;
+	float: right;
+	-webkit-transform: rotate(7deg);
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.articleDivider {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1.5rem;
+	text-transform: uppercase;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	vertical-align: center;
+	position: relative;
+	position: relative;
+    top: 25%;
+}
+
+#article1 {
+	-webkit-transform: rotate(-90deg);
+}
+
+#date {
+	-webkit-transform: rotate(-90deg);
+}
+
+.article {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	vertical-align: center;
+	position: relative;
+	position: relative;
+    top: 25%;
+}
+
+.article-date {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	vertical-align: center;
+	position: relative;
+	position: relative;
+    top: 65%;
+}
+
+#strip1 {
+	width: 10%;
+	background-color: #C23B22;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+
+#strip1:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+#strip1:hover .article{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+#strip1:hover .article-date{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+
+p {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+	width: 80%;
+	left: 10%;
+	right: 5%;
+	height: 10%;
+	text-align: center;
+	vertical-align: center;
+	position: relative;
+	position: relative;
+    top: 15%;
+}
+
+/*try a pop up modal??? to give directions, as part of the user interface*/
+/*#strip10:hover {
+	width: 30%;
+}*/
+
+
+/*.strip {
+	overflow: hidden;
+}*/
+
+
