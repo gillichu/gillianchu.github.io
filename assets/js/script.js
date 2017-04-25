@@ -266,6 +266,10 @@ $("#strip9").hover(function () {
  $("#a9p1").text("");
  $("#a9p2").text("");
 });
+
+// $(".sf").hover(function () {
+//   $(".sf").flip();
+// })
   //THIS IS NOT A REQUIRED QUESTION 
   // EXTRA FOR EXPERTS 
 

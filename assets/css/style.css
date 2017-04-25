@@ -5,6 +5,7 @@
 	width: 280px;
 	height: 100%;
 	position: fixed;
+	z-index: 2;
 	background-color: black;
 	-webkit-transform:translateX(-280px);
 	-webkit-transition: all 0.3s;
@@ -141,7 +142,6 @@
 	opacity: 0.8;
 	z-index: 1;
 	position: fixed;
-	float: left;
 }
 
 #about-me {
@@ -288,6 +288,7 @@ a {
 
 /* Overriding default styles on the ul */
 .sidebar-container1 ul {
+	z-index: 2;
 	margin: 0;
 	padding: 0;
 	margin-top: 10px;
