@@ -43,12 +43,22 @@
 /* QUESTION #4: PLACE CAROUSEL STYLES BELOW */
 .carousel-container {
 	width: 960px;
-	margin-left: auto;
-	margin-right: auto;
+	float: left;
+	margin-left: -5%;
 	height: 250px;
 	overflow: hidden;
 	position: relative;
 }
+
+.carousel-container-right {
+	width: 960px;
+	float: right;
+	margin-right: -7%;
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+}
+
 
 .carousel-container-home {
 	z-index: 2;
@@ -474,6 +484,30 @@ a {
 	text-align: center;
 }
 
+.title_carousel {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+	float: left;
+	position: relative;
+	text-align: center;
+	margin-left: 5%;
+	margin-top: 15%;
+}
+
+.title_carousel-right {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+	float: right;
+	position: relative;
+	text-align: center;
+	margin-right: 5%;
+	margin-top: 15%;
+}
+
 /* jQuery Manipulation Classes */
 
 .no-scroll {
@@ -862,6 +896,42 @@ p {
 	position: relative;
 	position: relative;
     top: 15%;
+}
+
+.resume-body {
+	background-imate: ;
+}
+
+h1 {
+    font-size: 3em;
+    font-family:'Cormorant Garamond', serif;
+    color: rgb(255,255,255);
+    text-align: center;
+}
+h2 {
+    font-size: 1.7em;
+    font-family:'Cormorant Garamond', serif;
+    color: rgb(255,255,255);
+    text-align: left;
+}
+h3 {
+    font-size: 1.4em;
+    font-family:'Cormorant Garamond', serif;
+    color: rgb(255,255,255);
+    text-align: right;
+}
+h4 {
+    font-size: 1.6em;
+    font-family:'Cormorant Garamond', serif;
+    color: rgb(255,255,255);
+    text-align: center;
+}
+p2 {
+    font-size: 1.2em;
+    font-family:'Cormorant Garamond', serif;
+    line-height: 1.4em;
+    text-align: center;
+    color: rgb(255,255,255);
 }
 
 /*try a pop up modal??? to give directions, as part of the user interface*/
