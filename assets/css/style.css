@@ -1,7 +1,25 @@
 /* Please read through the provided code below to understand it */
 
 /* QUESTION #3: PLACE SIDEBAR STYLES BELOW */
-.sidebar-container {
+.sidebar-container1 {
+	width: 280px;
+	height: 100%;
+	position: fixed;
+	background-color: black;
+	-webkit-transform:translateX(-280px);
+	-webkit-transition: all 0.3s;
+}
+
+.sidebar-container2 {
+	width: 280px;
+	height: 100%;
+	position: fixed;
+	background-color: black;
+	-webkit-transform:translateX(-280px);
+	-webkit-transition: all 0.3s;
+}
+
+.sidebar-container3 {
 	width: 280px;
 	height: 100%;
 	position: fixed;
@@ -11,6 +29,7 @@
 }
 
 .sidebar-item {
+	z-index: 2;
 	font-weight: 700;
 	font-size: 16px;
 	color: white;
@@ -31,6 +50,7 @@
 }
 
 .carousel-container-home {
+	z-index: 2;
 	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
@@ -61,6 +81,7 @@
 }
 
 #carousel-home {
+	z-index: 2;
 	width: 4800px;
 	height: 80%;
 	margin-left: 0px;
@@ -76,6 +97,7 @@
 }
 
 .carousel-item {
+	letter-spacing: .1rem;
 	width: 960px;
 	position: relative;
 	height: 100%;
@@ -96,26 +118,72 @@
 }
 
 #quote-section {
-	background-color: #2bde73
+	background-color: #C06C84;
 }
 
 #lived-section {
-	background-color: #8bb2af;
+	background-color: #F67280;
 }
 
 #travel-section {
-	background-color: #D8BFD8;
+	background-color: #6C5B7B;
 }
 
 #home-page-section {
-	background-color: #D8BFD8;
+	background: url("background.png");
+    background-repeat: no-repeat;
+}
+
+#hero-layer {
+	width: 100%;
+	height: 100%;
+	background-color: #6C5B7B;
+	opacity: 0.8;
+	z-index: 1;
+	position: fixed;
+	float: left;
 }
 
 #about-me {
+	letter-spacing: .2rem;
+	font-weight: 700;
+	line-height: 1.5rem;
+	font-size: 20px;
+	color: white;
+	z-index: 2;
 	width: 100%;
 	height: 250px;
-	margin-top: auto;
+	margin-top: -10%;
+	margin-left: -15%;
+	float: left;
 	position: fixed;
+	float: left;
+}
+
+.about-me-paragraph {
+	z-index: 2;
+	color: white;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1.5rem;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+	width: 40%;
+	height: 30%;
+	margin-left: 36%;
+	text-align: left;
+	position: relative;
+    top: 8%;
+}
+
+#gif {
+	z-index: 2;
+	float:left;
+	width:50px;
+	height:50px;
+	position: relative;
+	margin-left: 15%;
+	margin-top: -10%;
 }
 
 /* DOCUMENT SET UP */
@@ -182,7 +250,31 @@ a {
 /* FREEBIES */
 
 /* Styling the Sidebar Button */
-#sidebar-button {
+#sidebar-button1 {
+	position: fixed;
+	z-index: 100;
+	left: 15px;
+	top: 15px;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+} 
+
+#sidebar-button2 {
+	position: fixed;
+	z-index: 100;
+	left: 15px;
+	top: 15px;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+} 
+
+#sidebar-button3 {
 	position: fixed;
 	z-index: 100;
 	left: 15px;
@@ -195,14 +287,29 @@ a {
 } 
 
 /* Overriding default styles on the ul */
-.sidebar-container ul {
+.sidebar-container1 ul {
 	margin: 0;
 	padding: 0;
-	list-style: none;
 	margin-top: 10px;
+	vertical-align: center;
 }
 
-.page-wrapper {
+.sidebar-container2 ul {
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+	vertical-align: center;
+}
+
+.sidebar-container3 ul {
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+	vertical-align: center;
+}
+
+.page-wrapper1 {
+	z-index: 2;
 	height: 100%;
 	width: 100%;
 	-webkit-transition: all .3s;
@@ -218,11 +325,19 @@ a {
 	transition: all .3s;
 }
 
+.page-wrapper3 {
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
 /* Styling for the carousel previous button */
 #carousel-prev1 {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     padding: 10px;
     left: 60px;
     top: 50%;
@@ -236,8 +351,8 @@ a {
 /* Styling for the carousel next button */
 #carousel-next1 {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     padding: 10px;
     right: 60px;
     top: 50%;
@@ -250,8 +365,8 @@ a {
 
 #carousel-prev2 {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     padding: 10px;
     left: 60px;
     top: 50%;
@@ -265,8 +380,8 @@ a {
 /* Styling for the carousel next button */
 #carousel-next2 {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     padding: 10px;
     right: 60px;
     top: 50%;
@@ -279,8 +394,8 @@ a {
 
 #carousel-prev3 {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     padding: 10px;
     left: 60px;
     top: 50%;
@@ -294,8 +409,8 @@ a {
 /* Styling for the carousel next button */
 #carousel-next3 {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     padding: 10px;
     right: 60px;
     top: 50%;
@@ -308,8 +423,8 @@ a {
 
 #carousel-next-home {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     padding: 10px;
     right: 60px;
     top: 40%;
@@ -322,8 +437,8 @@ a {
 
 #carousel-prev-home {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     padding: 10px;
     left: 60px;
     top: 40%;
@@ -381,7 +496,7 @@ a {
 
 #strip2 {
 	width: 10%;
-	background-color: #FF6961;
+	background-color: #F67280;
 	height: 100%;
 	float: left;
 }
@@ -393,7 +508,7 @@ a {
 
 #strip3 {
 	width: 10%;
-	background-color: #FFB6C1;
+	background-color: #C06C84;
 	height: 100%;
 	float:left;
 }
@@ -403,21 +518,9 @@ a {
 	-webkit-transition: all 0.3s;
 }
 
-#strip4 {
-	width: 10%;
-	background-color: #F49AC2;
-	height: 100%;
-	float:left;
-}
-
-#strip4:hover {
-	width: 20%;
-	-webkit-transition: all 0.3s;
-}
-
 #strip5 {
 	width: 10%;
-	background-color: #B19CD9;
+	background-color: #FF8C94;
 	height: 100%;
 	float:left;
 }
@@ -429,7 +532,7 @@ a {
 
 #strip6 {
 	width: 10%;
-	background-color: #FFB347;
+	background-color: #FFAAA6;
 	height: 100%;
 	float:right;
 }
@@ -441,7 +544,7 @@ a {
 
 #strip7 {
 	width: 10%;
-	background-color: #FFB6C1;
+	background-color: #FFD3B5;
 	height: 100%;
 	float:right;
 }
@@ -453,7 +556,7 @@ a {
 
 #strip8 {
 	width: 10%;
-	background-color: #77DD77;
+	background-color: #DCEDC2;
 	height: 100%;
 	float:right;
 }
@@ -465,7 +568,7 @@ a {
 
 #strip9 {
 	width: 10%;
-	background-color: #CB99C9;
+	background-color: #A8E6CE;
 	height: 100%;
 	float:right;
 }
@@ -502,7 +605,29 @@ a {
     top: 25%;
 }
 
+.articleDividerInstructions {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1.5rem;
+	text-transform: uppercase;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	vertical-align: center;
+	position: relative;
+	position: relative;
+    top: 55%;
+}
+
 #article1 {
+	-webkit-transform: rotate(-90deg);
+}
+
+#article2 {
+	-webkit-transform: rotate(-90deg);
+}
+
+#article4 {
 	-webkit-transform: rotate(-90deg);
 }
 
@@ -540,7 +665,7 @@ a {
 
 #strip1 {
 	width: 10%;
-	background-color: #C23B22;
+	background-color: #F8B195;
 	height: 100%;
 	float: left;
 	text-align: center;
@@ -557,6 +682,169 @@ a {
 #strip1:hover .article-date{
 	-webkit-transform: rotate(0deg);
 	-webkit-transition: all 0.3s;
+}
+
+.batlo {
+	position: relative;
+	top: 30%;
+	-webkit-transform: rotate(-90deg);
+	-webkit-transition: all 0.3s;
+	margin-top: 15%;
+}
+
+#strip4 {
+	width: 10%;
+	background-color: #6C5B7B;
+	height: 100%;
+	float:left;
+	text-align: center;
+}
+
+#strip4:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+
+#strip4:hover .article{
+	width: 90%;
+	margin-left: 5%;
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+#strip4:hover .article-date{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+
+#strip4:hover .batlo{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+
+#strip2:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+#strip2:hover .article{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+#strip2:hover .article-date{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+
+#strip3:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+#strip3:hover .article{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+#strip3:hover .article-date{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+
+#article3 {
+	-webkit-transform: rotate(-90deg);
+}
+
+
+
+#strip5:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+#strip5:hover .article{
+	width: 80%;
+	margin-left: 10%;
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+#strip5:hover .article-date{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+
+#article5 {
+	-webkit-transform: rotate(-90deg);
+}
+
+
+
+#strip6:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+#strip6:hover .article{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+#strip6:hover .article-date{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+
+#article6 {
+	-webkit-transform: rotate(-90deg);
+}
+
+
+
+#strip7:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+#strip7:hover .article{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+#strip7:hover .article-date{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+
+#article7 {
+	-webkit-transform: rotate(-90deg);
+}
+
+
+
+#strip8:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+#strip8:hover .article{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+#strip8:hover .article-date{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+
+#article8 {
+	-webkit-transform: rotate(-90deg);
+}
+
+
+#strip9:hover {
+	width: 20%;
+	-webkit-transition: all 0.3s;
+}
+#strip9:hover .article{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+#strip9:hover .article-date{
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: all 0.3s;
+}
+
+#article9 {
+	-webkit-transform: rotate(-90deg);
 }
 
 p {
